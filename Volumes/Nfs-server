@@ -2,16 +2,16 @@ sudo apt update -y
 
 sudo apt install nfs-kernel-server -y
 
-sudo mkdir -p /mnt/bharath
+sudo mkdir -p /mnt/qspider
 
-sudo chown -R nobody:nogroup /mnt/bharath/
+sudo chown -R nobody:nogroup /mnt/qspider/
 
 sudo vim /etc/exports
 
 #insert this content to /etc/exports 
-    /mnt/bharath  *(rw,sync,no_subtree_check)
+    /mnt/qspider  *(rw,sync,no_subtree_check)
 #  if you face any security issues then use below content 
-   /mnt/bharath  *(rw,sync,no_subtree_check,insecure)
+   /mnt/qspider  *(rw,sync,no_subtree_check,insecure)
    
 sudo exportfs -a
 
