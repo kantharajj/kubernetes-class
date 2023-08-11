@@ -12,4 +12,4 @@ spec:
     - ReadWriteMany
   nfs:
     server: 172.31.40.166
-    path: "/mnt/bharath"
+    path: "/mnt/qspider"
